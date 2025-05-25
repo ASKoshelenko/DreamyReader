@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin "@tailwindcss/typography";
+
+:root,
+html.light {
+  --background: #ffffff;
+  --foreground: #2d3748;
+  --base: #f7fafc;
+  --offbase: #e2e8f0;
+  --accent: #ef4444;
+  --muted: #718096;
+}
+
+html.dark {
+  --background: #111111;
+  --foreground: #ededed;
+  --base: #171717;
+  --offbase: #343434;
+  --accent: #f87171;
+  --muted: #a3a3a3;
+}
+
+html.ocean {
+  --background: #020617;
+  --foreground: #e2e8f0;
+  --base: #0f172a;
+  --offbase: #1e293b;
+  --accent: #38bdf8;
+  --muted: #94a3b8;
+}
+
+html.forest {
+  --background: #0a0f0c;
+  --foreground: #d4e8d0;
+  --base: #111a15;
+  --offbase: #1a2820;
+  --accent: #4ade80;
+  --muted: #7c8f85;
+}
+
+html.sunset {
+  --background: #1a0f0f;
+  --foreground: #ffe4d6;
+  --base: #2c1810;
+  --offbase: #3d1f14;
+  --accent: #ff6b6b;
+  --muted: #bc8f8f;
+}
+
+html.sea {
+  --background: #0c1922;
+  --foreground: #e0f2fe;
+  --base: #102c3d;
+  --offbase: #1a3c52;
+  --accent: #06b6d4;
+  --muted: #7ca7c4;
+}
+
+html.mint {
+  --background: #0f1916;
+  --foreground: #dcfce7;
+  --base: #132d27;
+  --offbase: #1c3d35;
+  --accent: #2dd4bf;
+  --muted: #75a99c;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
